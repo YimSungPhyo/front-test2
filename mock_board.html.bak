@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <style>
+	* {
+		box-sizing: border-box;
+	}
+
+	.board-container, .post-list, .pagination, .board-actions  {
+		border: 1px solid black;
+		margin: 10px;
+		padding: 10px;
+	}
+
+  </style>
+ </head>
+
+ <body>
+
+	  <div class="board-container">
+		<h2 class="board-title">게시판</h2>
+		
+		<!-- component: PostList -->
+		<table class="post-list">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>작성일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>3</td>
+					<td>React Mockup 테스트 게시글입니다.</td>
+					<td>홍길동</td>
+					<td>2025-11-10</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>간단한 HTML 구조 확인</td>
+					<td>김철수</td>
+					<td>2025-11-09</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>안녕하세요! 첫 게시글입니다.</td>
+					<td>이영희</td>
+					<td>2025-11-08</td>
+				</tr>
+			</tbody>
+		</table>
+		
+
+		<!-- component: Pagination -->
+		<div class="pagination">
+			<a href="#">&laquo; 이전</a>
+			<a href="#" class="active">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">다음 &raquo;</a>
+		</div>
+		
+
+		<!-- component: BoardActions -->
+		<div class="board-actions">
+			<button class="write-button">글쓰기</button>
+			<input type="text" placeholder="검색어를 입력하세요">
+			<button class="search-button">검색</button>
+		</div>
+	   
+	</div>
+ </body>
+</html>

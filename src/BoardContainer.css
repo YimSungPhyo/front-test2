@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*추후 border 두께 조절할 것 */
+.board-container, .post-list, .pagination, .board-actions  {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+.search-button, .write-button {
+
+    border : 1px solid lightgray;
+    margin: 5px;
+}

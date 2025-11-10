@@ -1,42 +1,43 @@
-import type { Post } from "./types";
+import React, {useState} from 'react';
 
-//입력타입 정의
-interface PostListProps {
-    posts: Post[];
-}
 
-//컴포넌트
-const PostList: React.FC<PostListProps> = ({posts}) => {
 
+//component 
+const PostList = () => {
+ 
     return (
-
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-
-            {
-                posts.map( post => (
-                
-                    <li key={post.id} style={{ border: '1px solid #eee', margin: '10px' }}>
-                        {post.title} - {post.date}
-                    </li>
-
-                    )  
-                )   
-            }
-
-        </ul>
+        <table className="post-list">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>React Mockup 테스트 게시글입니다.</td>
+                    <td>홍길동</td>
+                    <td>2025-11-10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>간단한 HTML 구조 확인</td>
+                    <td>김철수</td>
+                    <td>2025-11-09</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>안녕하세요! 첫 게시글입니다.</td>
+                    <td>이영희</td>
+                    <td>2025-11-08</td>
+                </tr>
+            </tbody>
+        </table>
     );
+};
 
-} 
-
-/*
-    <ul style={{ listStyle: 'none', padding: 0 }}>
-      {posts.map(post => (
-        <li key={post.id} style={{ border: '1px solid #eee', margin: '10px' }}>
-          **{post.title}** ({post.date})
-        </li>
-      ))}
-    </ul>
-
-*/
 
 export default PostList;
