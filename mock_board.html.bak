@@ -22,7 +22,7 @@
  </head>
 
  <body>
-
+	  <!-- component(1): BoardContainer -->	
 	  <div class="board-container">
 		<h2 class="board-title">°Ô½ÃÆÇ</h2>
 		
