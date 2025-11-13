@@ -46,7 +46,7 @@ const BoardContainer: React.FC = () => {
         
 
             {/* component: BoardActions */}
-            <BoardActions set={search}/>
+            <BoardActions onSearch={search}/>
 
         </div>    
 
