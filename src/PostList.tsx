@@ -46,7 +46,7 @@ const PostList: React.FC<Props> = ({ posts }) => {
                 {
                     posts.map( (post, i) => (
 
-                        <tr>
+                        <tr key={i}>
                             <td>{post.id}</td>
                             <td>{post.title}</td>
                             <td>{post.author}</td>

@@ -33,16 +33,18 @@ const BoardContainer: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
     //const [searchTerm, setSearchTerm] = useState('');
     
-    //useEffect는 렌더링 이후 실행되는 사이드 이펙트 처리용 훅입니다.
+
+
+
+    /*useEffect는 렌더링 이후 실행되는 사이드 이펙트 처리용 훅입니다.
     //React는 컴포넌트를 렌더링 → 브라우저가 DOM 업데이트 → useEffect 실행 순서로 처리합니다.
     // 즉, 화면이 실제로 업데이트된 다음에 실행되는 코드입니다.
     //상태 변경 감지 및 후속 작업
     //브라우저 새로 고침 시 2번 호출되는 이유는 React의 Strict Mode 때문입니다. 실제배포시는 1번만 호출됨
     // (useEffect, useLayoutEffecta 만 2번호출)
-    
-
     //개발의 Strict 모드에서 2번호출하지않기위해 ref를 활용
     const hasRun = useRef(false); // 실행 여부를 추적하는 플래그
+    */
     useEffect( () => {
         //===== 마운트시 실행 ============
         //ref 변수 hasRun false일때만 실행
@@ -97,7 +99,7 @@ const BoardContainer: React.FC = () => {
          */
 
 
-
+        console.log("search");
 
 
         //fiter후에도 필터전의  postItems 과 값이 같은 이유는 setStat는 비동기 함수이기 때문
